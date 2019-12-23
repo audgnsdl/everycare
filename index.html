@@ -24,7 +24,7 @@
 	<body>
 
 		<header>
-			<nav class="site-header sticky-top py-1">
+			<nav class="sticky-top py-1">
 
 					<a class="py-2" href="#" aria-label="Product">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
@@ -111,13 +111,12 @@
 						<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
 
 					</div>
-					<div class="col-md-7 order-md-1">
+					<div class="col-md-7 order-md-1 image">
 						<img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F9952093E5B38EA0705" alt="Pic 02" />
 					</div>
 				</div>
 			</div>
 		</section>
-
 		<section id="three" class="wrapper align-center">
 			<header>
 				<h1>프로젝트</h1>
@@ -146,51 +145,52 @@
 						</header>
 						<p>Pellentesque fermentum dolor. Aliquam quam lectus<br>facilisis auctor, ultrices ut, elementum vulputate, nunc<br> blandit ellenste egestagus commodo.</p>
 						<footer>
-							<a href="#" class="button">제품 보기</a>
+							<a href="/test.html" class="button">제품 보기</a>
 						</footer>
 					</article>
 				</div>
 			</div>
 		</section>
-		<div id="qus" class="wrapper align-center" style="margin-top: 30px;">
+
+
+		<div id="qus" class="align-center inner container" style="margin-top: 30px;">
 			<header>
-				<h1 style="font-size: 40px;"> 회사 소개 </h1>
+				<h1 style="font-size: 40px;"><br><br><br> 회사 소개 <br><br><br></h1>
 			</header>
-			<div class="row">
-				<div class="col-md-6 login-form-1">
-					<div id="daumRoughmapContainer1577135211151" class="root_daum_roughmap root_daum_roughmap_landing "></div>
+			<div class="row mb-2">
+				<div class="col-md-6">
+					<!-- * 카카오맵 - 지도퍼가기 -->
+					<!-- 1. 지도 노드 -->
+					<div id="daumRoughmapContainer1577141516827" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
 					<!--
-						2. 설치 스크립트
-						* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-					-->
+                        2. 설치 스크립트
+                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
 					<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
 					<!-- 3. 실행 스크립트 -->
 					<script charset="UTF-8">
 						new daum.roughmap.Lander({
-							"timestamp" : "1577135211151",
-							"key" : "wd8s",
-							"mapWidth" : "640",
-							"mapHeight" : "360"
+							"timestamp" : "1577141516827",
+							"key" : "wd9z",
+							"mapWidth" : "500",
+							"mapHeight" : "300"
 						}).render();
 					</script>
-				</div>
-				<div class="col-md-6 login-form-1">
-					<div class="col p-4 d-flex flex-column position-static">
-						<div class="wrapper align-left">
-							<h2 class="mb-0">오시는 길</h2>
-							<p class="mb-auto">강원도 원주시 흥업면 연세대길 1</p>
-							<p class="mb-auto">창업보육센터 Every Care 사무실</p>
-							<p><br></p>
-							<p class="mb-auto">mail@everycare.co.kr</p>
-							<p><br></p>
-							<h2>상담전화 : 010-5247-5907</h2>
-						</div>
+					</div>
+					<div class="align-left">
+						<h2 class="mb-0">오시는 길</h2>
+						<p class="mb-auto">강원도 원주시 흥업면 연세대길 1</p>
+						<p class="mb-auto">창업보육센터 Every Care 사무실</p>
+						<p><br></p>
+						<p class="mb-auto">mail@everycare.co.kr</p>
+						<p><br></p>
+						<h2>상담전화 : 010-5247-5907</h2>
 					</div>
 				</div>
 			</div>
-		</div>
-			<div class="inner">
+			<div class="p-4 p-md-5 inner">
 				<h3>Get in touch</h3>
 
 				<form action="#" method="post">
@@ -212,8 +212,11 @@
 					</ul>
 				</form>
 			</div>
+		</div>
 	</body>
 	<script>
+		window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')
+
 		$(window).scroll(function(){
 			if ($(window).scrollTop() >= 100) {
 				$('nav').addClass('fixed-header');
@@ -240,7 +243,7 @@
 		body {width:100%;background:white;}
 		ul,li {list-style:none;}
 
-		nav {width:100%;padding:50px 0;background:#fff;z-index:10;transition:all 0.5s;}
+		nav {width:100%;padding:50px 0;background:#fff;transition:all 0.5s;}
 		nav .nav-area {width:1000px;margin:0 auto;}
 		nav .nav-area h1 {float:left;font-size:30px;}
 		nav .nav-area ul {width:1000px;margin:0 auto;text-align:right;}
@@ -261,5 +264,8 @@
 
 		.content {width:1000px;margin:0 auto;padding:30px;}
 		h5 {color : white;}
+		div {
+			display: block;
+		}
 	</style>
 </html>
