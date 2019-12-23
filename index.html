@@ -10,33 +10,32 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 	</head>
 	<body>
 
-		<!-- Header -->
 		<header>
 			<nav>
 				<div class="nav-area">
-					<h1>LOGO</h1>
+					<a href="#none;"><h1>LOGO</h1></a>
 					<ul>
-						<li><a href="">서비스</a></li>
-						<li><a href="">소개</a></li>
-						<li><a href="">프로젝트</a></li>
-						<li><a href="">문의</a></li>
+						<li><a href="#service">서비스</a></li>
+						<li><a href="#intro">소개</a></li>
+						<li><a href="#three">프로젝트</a></li>
+						<li><a href="#qus">문의</a></li>
 					</ul>
 				</div>
 			</nav>
 		</header>
 
-		<!-- Banner -->
-		<section class="inner">
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-		</section>
 			<section id="banner">
-				<div class="inner">
+				<div class="flex">
+					<h1>Every Care</h1>
+				</div>
+				<div class="inner" id="service">
 					<header>
-						<h1>Every Care</h1>
+						<h1>각종 서비스</h1>
 					</header>
 
 					<div class="flex ">
@@ -45,17 +44,31 @@
 							<span class="icon fa-car"></span>
 							<h3>설계</h3>
 							<p>Suspendisse amet ullamco</p>
+							<p>Suspendisse amet ullamco</p>
+							<p>Suspendisse amet ullamco</p>
+							<p>Suspendisse amet ullamco</p>
+							<p>Suspendisse amet ullamco</p>
+
 						</div>
 
 						<div>
 							<span class="icon fa-camera"></span>
 							<h3>3D 엘리먼트</h3>
 							<p>Class aptent taciti ad litora</p>
+							<p>Class aptent taciti ad litora</p>
+							<p>Class aptent taciti ad litora</p>
+							<p>Class aptent taciti ad litora</p>
+							<p>Class aptent taciti ad litora</p>
+
 						</div>
 
 						<div>
 							<span class="icon fa-bug"></span>
 							<h3>프로젝트</h3>
+							<p>Nulla vitae mauris non felis</p>
+							<p>Nulla vitae mauris non felis</p>
+							<p>Nulla vitae mauris non felis</p>
+							<p>Nulla vitae mauris non felis</p>
 							<p>Nulla vitae mauris non felis</p>
 						</div>
 
@@ -67,21 +80,44 @@
 				</div>
 			</section>
 
+		<section id="intro" class="wrapper align-center">
+			<div class="inner">
+				<header>
+					<h1> 회사 소개 </h1>
+				</header>
+				<div class="flex flex-2">
 
-		<!-- Three -->
+					<article>
+						<div class="image">
+							<img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F9952093E5B38EA0705" alt="Pic 02" />
+						</div>
+					</article>
+					<article>
+						<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
+						<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
+						<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
+						<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
 			<section id="three" class="wrapper align-center">
 				<div class="inner">
+					<header>
+						<h1>제품 설명</h1>
+					</header>
 					<div class="flex flex-2">
 						<article>
 							<div class="image">
 								<img src="images/pic01.jpg" alt="Pic 01" />
 							</div>
 							<header>
-								<h3>Lorem ipsum<br /> dolor amet nullam</h3>
+								<h3>제품 제작</h3>
 							</header>
-							<p>Morbi in sem quis dui placerat ornare. Pellentesquenisi<br />euismod in, pharetra a, ultricies in diam sed arcu. Cras<br />consequat  egestas augue vulputate.</p>
+							<p>저희 Every Care는 고객님의 신청 제품 제작은 물론, <br> 저희만의 아이디어로 새로운 제품들을 만들어 나갑니다.</p>
 							<footer>
-								<a href="#" class="button">Learn More</a>
+								<a href="#" class="button">제품 보기</a>
 							</footer>
 						</article>
 						<article>
@@ -89,19 +125,18 @@
 								<img src="images/pic02.jpg" alt="Pic 02" />
 							</div>
 							<header>
-								<h3>Sed feugiat<br /> tempus adipicsing</h3>
+								<h3>외주 제작</h3>
 							</header>
-							<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
+							<p>저희 Every Care는 외부에서 신청한 제품 용역, 외주제작도 가능합니다. <br> 다양한 외주 제품들을 구경하시고 신청해주세요.</p>
 							<footer>
-								<a href="#" class="button">Learn More</a>
+								<a href="#" class="button">제품 보기</a>
 							</footer>
 						</article>
 					</div>
 				</div>
 			</section>
 
-		<!-- Footer -->
-			<footer id="footer">
+			<footer>
 				<div class="inner">
 
 					<h3>Get in touch</h3>
@@ -131,12 +166,19 @@
 
 				</div>
 			</footer>
+		<div class="jumbotron">
+			<h1>Hello Location!</h1>
+			<p>views/statics/location.jsp</p>
+		</div>
+		<div id="map" style="width:500px;height:400px;"></div>
 
-		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 	</body>
 	<script>
@@ -148,6 +190,12 @@
 				$('nav').removeClass('fixed-header');
 			}
 		});
+
+		function j_test(n){
+			$('html, body').stop().animate({
+				scrollTop : $('.css_test img').eq(n).offset().top
+			});
+		}
 	</script>
 	<style>
 		* {margin:0px;padding:0px;}
@@ -161,7 +209,7 @@
 		nav .nav-area ul li {display:inline-block;margin-left:40px;line-height:40px;}
 		nav .nav-area ul li a {color:#333;text-decoration:none;cursor:pointer;}
 
-		.fixed-header {position:fixed;top:0;left:0;width:100%;padding:20px 0;animation:slide-down 0.7s;opacity:0.9;}
+		.fixed-header {position:fixed;top:0;left:0;width:100%;padding:20px 0;animation:slide-down 0.5s;opacity:0.9;}
 		@keyframes slide-down {
 			0% {
 				opacity: 0;
