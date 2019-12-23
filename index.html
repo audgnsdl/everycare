@@ -135,4 +135,40 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+	<script>
+		$(window).scroll(function(){
+			if ($(window).scrollTop() >= 100) {
+				$('nav').addClass('fixed-header');
+			}
+			else {
+				$('nav').removeClass('fixed-header');
+			}
+		});
+	</script>
+	<style>
+		* {margin:0px;padding:0px;}
+		body {width:100%;background:#444;}
+		ul,li {list-style:none;}
+
+		nav {width:100%;padding:50px 0;background:#fff;z-index:10;transition:all 0.5s;}
+		nav .nav-area {width:1000px;margin:0 auto;}
+		nav .nav-area h1 {float:left;font-size:30px;}
+		nav .nav-area ul {width:1000px;margin:0 auto;text-align:right;}
+		nav .nav-area ul li {display:inline-block;margin-left:40px;line-height:40px;}
+		nav .nav-area ul li a {color:#333;text-decoration:none;cursor:pointer;}
+
+		.fixed-header {position:fixed;top:0;left:0;width:100%;padding:20px 0;animation:slide-down 0.7s;opacity:0.9;}
+		@keyframes slide-down {
+			0% {
+				opacity: 0;
+				transform: translateY(-100%);
+			}
+			100% {
+				opacity: 0.9;
+				transform: translateY(0);
+			}
+		}
+
+		.content {width:1000px;margin:0 auto;padding:30px;}
+	</style>
 </html>
